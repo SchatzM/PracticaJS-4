@@ -83,7 +83,42 @@ var ATHM50x = {
 		return console.info (resumenDatosProducto);
 	},
 	comprobarStock: function (lugar) { // Método para comprobar la cantidad de unidades existentes almacenadas en tienda o almacen
-		return console.info (`${this.detalles.modelo}:`,this.stock[lugar] > 0 ? `Quedan ${this.stock[lugar]} unidad(es).` : `Sin stock en ${lugar}.`);
+		return console.info (`${this.detalles.modelo}:`, this.stock[lugar] > 0 ? `Quedan ${this.stock[lugar]} unidad(es).` : `Sin stock en ${lugar}.`);
+	}
+};
+
+// Tercer objeto
+var impresora3D = {
+	marca: 'Anet',
+	modelo: 'ET5',
+	especificaciones: {
+		dimensiones: {
+			fisicas: {
+				alto: 640,
+				ancho: 520,
+				profundidad: 540
+			},
+			impresion: {
+				alto: 400,
+				ancho: 300,
+				profundidad: 300
+			}
+		},
+		diametro: {
+			boquilla: 0.4,
+			filamento: 1.75
+		},
+		materialSoportado: ['PLA', 'ABS', 'HIPS'],
+		peso: {
+			neto: 9.7,
+			bruto: 14.2
+		},
+		pantalla: true
+	},
+	comprobarSoporteMaterial: function (tipo) { // Método para comprobar si un tipo de material especificado es soportado
+		let material = tipo.toUpperCase(); // Forzamos mayúsculas en el nombre del material antes de comparar con elementos de Array
+
+		return console.info (`El material ${material}`, this.especificaciones.materialSoportado.includes(material) ? 'es soportado.' : 'no es soportado.'); // Mostramos en consola si el material es soportado o no
 	}
 };
 
@@ -92,3 +127,5 @@ miCasa.mostrarResumen (); // Muestra resumen de las propiedades del objeto miCas
 
 ATHM50x.mostrarResumen (); // Muestra resumen de las propiedad del objeto ATHM50x
 /** ATHM50x.comprobarStock('tienda') */ // Muestra información sobre la cantidad del producto disponible en tienda
+
+impresora3D.comprobarSoporteMaterial('pla') // Muestra si el material especificado es soportado por la impresora
