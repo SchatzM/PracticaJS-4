@@ -129,4 +129,5 @@ miCasa.mostrarResumen (); // Muestra resumen de las propiedades del objeto miCas
 ATHM50x.mostrarResumen (); // Muestra resumen de las propiedad del objeto ATHM50x
 /** ATHM50x.comprobarStock('tienda') */ // Muestra información sobre la cantidad del producto disponible en tienda
 
-impresora3D.comprobarSoporteMaterial('pla') // Muestra si el material especificado es soportado por la impresora
+impresora3D.comprobarSoporteMaterial('pla'); // Muestra si el material especificado es soportado por la impresora
+impresora3D.comprobarSoporteMaterial('test');
