@@ -1,2 +1,2 @@
-# Plantilla HTML
-Plantilla genérica
+# Práctica 07
+Creación de Objetos
