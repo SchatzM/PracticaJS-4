@@ -122,6 +122,7 @@ var impresora3D = {
 	}
 };
 
+// Uso de métodos de los diferentes objetos
 miCasa.mostrarResumen (); // Muestra resumen de las propiedades del objeto miCasa
 /** miCasa.mostrarPropiedadObjeto ('detalles') */ // Muestra los valores dentro de la propiedad detalles del objeto miCasa
 
