@@ -87,8 +87,8 @@ var ATHM50x = {
 	}
 };
 
-
 miCasa.mostrarResumen (); // Muestra resumen de las propiedades del objeto miCasa
 /** miCasa.mostrarPropiedadObjeto ('detalles') */ // Muestra los valores dentro de la propiedad detalles del objeto miCasa
 
 ATHM50x.mostrarResumen (); // Muestra resumen de las propiedad del objeto ATHM50x
+/** ATHM50x.comprobarStock('tienda') */ // Muestra información sobre la cantidad del producto disponible en tienda
